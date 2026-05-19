@@ -29,10 +29,12 @@
     <h2>2. Data Collection and Usage</h2>
     <p>We do not have access to any information that can identify you.
         <ul>
-            <li><strong>No Personal Information:</strong> We do not collect names, email addresses, or phone numbers.</li>
-            <li><strong>No Tracking:</strong> There are no analytics suites or tracking pixels integrated into the software.</li>
-            <li><strong>No Cloud Storage:</strong> All application settings and configurations are stored locally on your device.</li>
-        </ul>
+        <li><strong>Accessibility Service API:</strong> This permission is required structurally to draw the subpixel hardware filter overlay (`TYPE_ACCESSIBILITY_OVERLAY`) seamlessly across the screen. We do not inspect, log, or transmit text on the screen, personal credentials, or any data rendered through the service; its function is entirely localized to canvas layout positioning and lifecycle tracking.</li>
+        <li><strong>Post Notifications (Android 13+):</strong> Used to display a persistent, low-priority status bar controller tray. This notification is essential to provide the user with clear transparency that a subpixel filter overlay is actively running in the background, as well as providing immediate shortcut toggles to adjust or stop the service.</li>
+        <li><strong>Ignore Battery Optimizations:</strong> Required to request exemption from aggressive OS-level background freezing mechanisms. This ensures that the high-frequency pixel shifting algorithm (`shiftRunnable`) can execute uninterrupted on its set interval timer to consistently prevent AMOLED panel burn-in.</li>
+        <li><strong>Package Query:</strong> Used to check for the presence of the companion <em>Pro Unlocker</em> application locally on the device to securely unlock premium slider parameters and custom intervals.</li>
+        <li><strong>Zero Network Access:</strong> This core application does not request Internet permissions. It operates as a fully sandboxed, offline utility.</li>
+    </ul>
     </p>
 
     <h2>3. Permissions Explained</h2>
